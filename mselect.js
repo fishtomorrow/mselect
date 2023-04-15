@@ -54,16 +54,16 @@ var ____mselect_css=`
 /**
  * 
  * 1   from select
- * 实例化
- * mselectify( $("[name='dimensions']",  container).get(0 ));
+ * //initialize  mselect
+ * mselectify( $("select[name='selectName']",  container).get(0 ));
  * 
- * 2  from input
- *  设置 kvs 数组
- *  $( '[name="filter"] [name="adx"]', container ) .data( "kvs", [ { k: "Adx1", v: "adx1"}, { k: "Adx2", v: "adx2"} ]);
- *  设置数据分割符
-    $( '[name="filter"] [name="adx"]', container ).data ( "split", ":" );
-    实例化
-    mselectify( $( '[name="filter"] [name="adx"]', container )  );
+ * 2  from input. For the case ,you can edit  select content as text.
+ *  //set kvs array for  options.
+ *  $( 'select[name="selectName"]', container ) .data( "kvs", [ { k: "k1", v: "v1"}, { k: "k2", v: "v2"} ]);
+ *  //set  split  for options when show as text
+    $( 'select[name="selectName"]', container ).data ( "split", ":" );
+    //initialize  mselect
+    mselectify( $( 'select[name="selectName"]', container )  );
  * 
  */
 var mselectId="__________________mselect";
@@ -99,7 +99,7 @@ _mselectify.prototype= {
     targetEle: null, 
     targetId: null, 
     targetType: "select", //select or  input
-    inputSplit: ",", //当targetType 为 input 时，多值使用分割符号
+    inputSplit: ",", //when targetType is input，split-chars for multiple values
     optionAreaId: null, 
     inputEleId: null,
     newControlId: null,
