@@ -7,7 +7,7 @@
 
 # Usage
 ``` js
-    //When you have to  html select  named 'selectName', just one line. Everything is done well.
+    //When you have a  html select  named 'selectName', just one line. Everything is done well.
     mselectify( $( 'select[name="selectName"]', container )  );
 
 ```
