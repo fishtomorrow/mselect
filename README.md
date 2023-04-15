@@ -11,3 +11,10 @@
     mselectify( $( 'select[name="selectName"]', container )  );
 
 ```
+
+# Demo
+- select demo
+![image](https://user-images.githubusercontent.com/332838/232178629-5d3fb6c3-e042-460c-bdb4-4d6c02fc08f3.png)
+
+- input demo
+![image](https://user-images.githubusercontent.com/332838/232178683-babc0f83-8766-4117-80d7-2688b8cb6b36.png)
